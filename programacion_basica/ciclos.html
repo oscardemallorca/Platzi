@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ciclos</title>
+  <script type="text/javascript">
+var c, t, b;
+
+function inicio()
+{
+  c = document.getElementById("caja");
+  t = document.getElementById("alejandra");
+  b = document.getElementById("botoncito");
+
+  b.addEventListener("click", calcular);
+
+  var numeros =  1;
+  // var resto;
+  // while(numeros <= 50)
+  // {
+  //   resto = numeros % 2;
+  //   if(resto == 0)
+  //   {
+  //     c.innerHTML += " " + numeros;
+  //   }
+  //   numeros++;
+  // }
+
+}
+
+function calcular()
+{
+  var numero = Number(t.value);
+  var calculo = 1;
+  var n = 1;
+  while(n <= numero)
+  {
+    calculo = calculo * n;
+    n++;
+  }
+  c.innerHTML = calculo;
+}  
+
+  </script>
+</head>
+<body>
+  <input type="text" id="alejandra" />
+  <input type="button" id="botoncito" value="Tocame" />
+
+  <div id="caja"></div>
+  <script type="text/javascript">
+  inicio();
+  </script>
+</body>
+</html>
