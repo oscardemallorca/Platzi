@@ -88,7 +88,7 @@ function dibujarCirculo2 (L2) {
 
 function rellenarCirculo2 (L2) {
 //Hay otras formas de rellenar pero he querido
-//utilizar un "for" para practicar
+//utilizar un "for" para practicar.
   var circulo2;
   for(circulo2 = 100; circulo2 >= 0; circulo2-- )
   {
